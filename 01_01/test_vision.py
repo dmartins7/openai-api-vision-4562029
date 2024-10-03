@@ -10,7 +10,7 @@ with open("rex-microcontrollers-mug-black.jpg", "rb") as f:
     base64_image = base64.b64encode(file_content).decode("utf-8")
 
 response = client.chat.completions.create(
-    model="gpt-4-vision-preview",
+    model="gpt-4o",
     messages=[
         {
             "role": "user",
